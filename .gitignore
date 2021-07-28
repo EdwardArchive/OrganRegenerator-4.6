@@ -78,3 +78,7 @@ CuraEngine
 
 #Prevents import failures when plugin running tests
 plugins/__init__.py
+/.vs/OrganRegenerator-4.6/v16/Browse.VC.db
+/.vs/OrganRegenerator-4.6/v16/Browse.VC.db-shm
+/.vs/OrganRegenerator-4.6/v16/Browse.VC.db-wal
+/.vs/OrganRegenerator-4.6/v16/Browse.VC.opendb
