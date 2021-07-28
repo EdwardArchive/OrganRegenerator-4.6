@@ -1,0 +1,137 @@
+{
+    "version": 2,
+    "name": "Rokit Invivo4d6",
+    "inherits": "rokitprinter",
+    "metadata": {
+        "visible": true,
+        "file_formats": "text/x-gcode",
+        "variants_name": "Nozzle Size",
+        "preferred_variant_name": "Dispenser G23 0.41",
+        "exclude_materials": [
+            "Vertex_Delta_ABS", "Vertex_Delta_PET", "Vertex_Delta_PLA", "Vertex_Delta_PLA_Glitter", "Vertex_Delta_PLA_Mat", "Vertex_Delta_PLA_Satin", "Vertex_Delta_PLA_Wood", "Vertex_Delta_TPU",
+            "chromatik_pla",
+            "dsm_arnitel2045_175","dsm_novamid1070_175",
+            "emotiontech_abs", "emotiontech_asax", "emotiontech_hips", "emotiontech_petg", "emotiontech_pla", "emotiontech_pva-m", "emotiontech_pva-oks","emotiontech_pva-s", "emotiontech_tpu98a",
+            "eSUN_PETG_Black", "eSUN_PETG_Grey", "eSUN_PETG_Purple", "eSUN_PLA_PRO_Black", "eSUN_PLA_PRO_Grey", "eSUN_PLA_PRO_Purple", "eSUN_PLA_PRO_White",
+            "fabtotum_abs","fabtotum_nylon","fabtotum_pla","fabtotum_tpu",
+            "fiberlogy_hd_pla",
+            "filo3d_pla","filo3d_pla_green","filo3d_pla_red",
+            "generic_abs","generic_abs_175", "generic_bam","generic_cffcpe","generic_cffpa","generic_cpe","generic_cpe_175", 
+            "generic_cpe_plus","generic_gffcpe",
+            "generic_gffpa","generic_hips","generic_hips_175","generic_nylon", "generic_nylon_175",
+            "generic_pc","generic_pc_175","generic_petg","generic_petg_175","generic_pla","generic_pla_175",
+            "generic_pp","generic_pva","generic_pva_175","generic_tough_pla","generic_tpu","generic_tpu_175",
+            "imade3d_petg_green","imade3d_petg_pink","imade3d_pla_green","imade3d_pla_pink", "imade3d_petg_175", "imade3d_pla_175",
+            "innofill_innoflex60_175",
+            "leapfrog_abs_natural","leapfrog_epla_natural","leapfrog_pva_natural",
+            "octofiber_pla",
+            "polyflex_pla","polymax_pla","polyplus_pla","polywood_pla",
+            "redd_abs","redd_asa","redd_hips","redd_nylon","redd_petg","redd_pla","redd_tpe",
+            "structur3d_dap100silicone",
+            "tizyx_abs","tizyx_flex","tizyx_petg","tizyx_pva","tizyx_pla","tizyx_pla_bois",
+            "ultimaker_abs_black","ultimaker_abs_blue","ultimaker_abs_green","ultimaker_abs_grey",
+            "ultimaker_abs_orange","ultimaker_abs_pearl-gold","ultimaker_abs_red","ultimaker_abs_silver-metallic",
+            "ultimaker_abs_white","ultimaker_abs_yellow",
+            "ultimaker_bam",
+            "ultimaker_cpe_black","ultimaker_cpe_blue","ultimaker_cpe_dark-grey","ultimaker_cpe_green",
+            "ultimaker_cpe_light-grey","ultimaker_cpe_plus_black","ultimaker_cpe_plus_transparent","ultimaker_cpe_plus_white",
+            "ultimaker_cpe_red","ultimaker_cpe_transparent","ultimaker_cpe_white","ultimaker_cpe_yellow",
+            "ultimaker_nylon_black","ultimaker_nylon_transparent",
+            "ultimaker_pc_black","ultimaker_pc_transparent","ultimaker_pc_white",
+            "ultimaker_pla_black","ultimaker_pla_blue","ultimaker_pla_green","ultimaker_pla_magenta","ultimaker_pla_orange","ultimaker_pla_pearl-white","ultimaker_pla_red","ultimaker_pla_silver-metallic",
+            "ultimaker_pla_transparent","ultimaker_pla_white","ultimaker_pla_yellow",
+            "ultimaker_pp_transparent",
+            "ultimaker_pva",
+            "ultimaker_tough_pla_black","ultimaker_tough_pla_green","ultimaker_tough_pla_red","ultimaker_tough_pla_white","ultimaker_tpu_black","ultimaker_tpu_blue","ultimaker_tpu_red","ultimaker_tpu_white",
+            "verbatim_bvoh_175",
+            "zyyx_pro_flex", "zyyx_pro_pla"
+        ],
+        "machine_extruder_trains":
+        {
+            "0": "rokit_invivo4d6_extruder_left",
+            "1": "rokit_invivo4d6_extruder_right1",
+            "2": "rokit_invivo4d6_extruder_right2",
+            "3": "rokit_invivo4d6_extruder_right3",
+            "4": "rokit_invivo4d6_extruder_right4",
+            "5": "rokit_invivo4d6_extruder_right5"
+        },
+        "preferred_material": "rokit_pcl"
+
+    },
+    "overrides": {
+        "machine_gcode_flavor":
+        {
+            "default_value": "Invivo4d6"
+        },
+        "machine_name": {
+            "default_value": "Rokit Invivo4d6" 
+        },
+        "left_first": {
+            "default_value": false
+        },
+        "machine_width": { 
+            "default_value": 85.4
+        },
+        "machine_depth": { 
+            "default_value": 127.6
+        },
+        "machine_height": { 
+            "default_value": 80
+        },
+        "machine_center_is_zero":
+        {
+            "default_value": true
+        },
+        "machine_build_dish_type": { 
+            "default_value": "Culture Dish:11060" 
+        },
+        "machine_firmware_retract":
+        {
+            "default_value": false
+        },
+        "layer_height_0": {
+            "default_value": 0.3
+        },
+        "retraction_amount": { 
+            "default_value": 1
+        },
+        "retraction_speed": { 
+            "default_value": 15
+        },
+        "retraction_extrusion_window":
+        {
+            "default_value": 1
+        },
+        "retraction_min_travel":
+        {
+            "default_value": 0.82
+        },
+        "switch_extruder_retraction_amount":
+        {
+            "default_value": 16
+        },
+        "switch_extruder_retraction_speeds":
+        {
+            "default_value": 20
+        },
+        "cool_fan_enabled":
+        {
+            "settable_per_extruder": true
+        },
+        "infill_before_walls": {
+            "value": false
+        },
+        "adhesion_type": {
+            "default_value": "skirt"
+        },
+        "machine_start_gcode": {
+            "default_value":";(*** start of start code for Dr.Invivo 4D6)\n;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {infill_sparse_density}\n;Print time: {print_time}\nM74 ; enable IO\nM72 ; motor drive enable\nM78 ; light ON\nM176 ; embed compressor ON\nG21 ; metric values\nG92 E0 ; reset Extruder\n{home_all_axis}\n;{shot_time_list} ; shot time\n;{vac_time_list} ; vac_time\n;{interval_list} ; interval\n;{shot_p_list}\n;{vac_p_list} ; vac_pressure\n{print_temp} ; print temperature\nG90 ; absolute positioning\nG92 Z40.0 C30.0 E0.0\n;(*** end of start code for Dr.Invivo 4D6)\n"
+        },
+        "machine_end_gcode": {
+            "default_value": "\n;(*** start of end code for Dr.Invivo 4D6)\n{end_code}\n;(*** end of end code for Dr.Invivo 4D6)\n"
+        },
+        "machine_extruder_count": { 
+            "default_value": 6 
+        }
+    }
+}

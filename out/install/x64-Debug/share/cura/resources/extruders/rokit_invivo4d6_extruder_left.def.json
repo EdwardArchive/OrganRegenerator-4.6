@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "Left",
+    "inherits": "fdmextruder",
+    "metadata": {
+        "machine": "rokit_invivo4d6",
+        "position": "0"
+    },
+
+    "overrides": {
+        "extruder_nr": {
+            "default_value": 0
+        },
+        "machine_extruder_start_code": {
+            "default_value0": "; (*** start of start code for D6)\n;{extruder_setup_code}\n"
+        },
+        "machine_extruder_end_code": {
+            "default_value0": "; (*** end of start code for D6)\n"
+        }
+    }
+}
