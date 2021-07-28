@@ -18,7 +18,6 @@ import "WelcomePages"
 
 UM.MainWindow {
     id: base
-
     // Cura application window title
     title: {
         const title = (PrintInformation !== null && PrintInformation.jobName != "") ? PrintInformation.jobName + " - " : ""
@@ -97,7 +96,7 @@ UM.MainWindow {
     Item  {
         id: backgroundItem
         anchors.fill: parent
-
+        focus : True
         signal hasMesh(string name) //this signal sends the filebase name so it can be used for the JobSpecs.qml
         function getMeshName(path) {
             //takes the path the complete path of the meshname and returns only the filebase

@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cura",
+    "\\docker",
+    "\\out",
+    "\\out\\install",
+    "\\resources\\qml",
+    "\\resources\\themes",
+    "\\resources\\themes\\rokit-light",
+    "\\resources\\themes\\rokit-light\\fonts"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\cura\\RokitMainWindow.py",
   "PreviewInSolutionExplorer": false
 }
