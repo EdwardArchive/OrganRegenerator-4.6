@@ -111,12 +111,12 @@ UM.MainWindow {
                 Cura.Actions.deleteSelection.trigger()
             }
             // application menu
-             else if (event.key === Qt.Key_F2 || event.key === Qt.Key_M)  {
+             else if (event.key === Qt.Key_Alt)  {
                 
                  applicationMenu.visible = (applicationMenu.visible) ? false : true
                  applicationMenu.height = (applicationMenu.visible) ? 20 :  0 
             }
-            else if (event.key === Qt.Key_F3 || event.key === Qt.Key_B) {
+            else if (event.key === Qt.Key_B) {
                 backgroundImage.visible = (backgroundImage.visible) ? false : true
             }
         }
