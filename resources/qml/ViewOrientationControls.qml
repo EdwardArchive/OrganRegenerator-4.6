@@ -86,6 +86,12 @@ Row
         onClicked :{
                 backgroundImage.visible = (backgroundImage.visible) ? false : true
         }
+        UM.TooltipArea
+        {
+            anchors.fill: parent
+            text: catalog.i18nc("@info:tooltip", "배경화면 이미지를 끄거냐/킵니다")
+            acceptedButtons: Qt.NoButton
+        }
 
     }
 }
