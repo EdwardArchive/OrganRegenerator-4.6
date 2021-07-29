@@ -32,7 +32,9 @@ Column
         id: information
         width: parent.width
         height: childrenRect.height
-        
+
+        //2021-07-29 슬라이싱 관련 상세 정보 임시 제거 처리
+        /*
         PrintInformationWidget
         {
             id: printInformationPanel
@@ -103,6 +105,7 @@ Column
                 font: UM.Theme.getFont("default")
             }
         }
+        */
     }
 
     Item
