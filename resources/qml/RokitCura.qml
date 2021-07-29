@@ -760,7 +760,23 @@ UM.MainWindow {
             }
         }
     }
+    ViewOrientationButton
+    {
+        visible : true
+        x:base.width-30
+        y:base.height-30
+        iconSource: UM.Theme.getIcon("view_background")
+        onClicked :{
+                backgroundImage.visible = (backgroundImage.visible) ? false : true
+        }
+        UM.TooltipArea
+        {
+            anchors.fill: parent
+            text: catalog.i18nc("@info:tooltip", "ON/OFF background img")
+            acceptedButtons: Qt.NoButton
+        }
 
+    }
     /**
      * Function to check whether a QML object has a certain type.
      * Taken from StackOverflow: https://stackoverflow.com/a/28384228 and
