@@ -24,6 +24,16 @@ UM.MainWindow {
         return title + CuraApplication.applicationDisplayName;
     }
 
+    Shortcut {
+        sequence: "Ctrl+B"
+        onActivated: backgroundImage.visible = (backgroundImage.visible) ? false : true
+    }
+
+    Shortcut {
+            sequence: "Shift+M"
+            onActivated: hidemenu()
+    }
+
     backgroundColor: UM.Theme.getColor("viewport_background")
 
     UM.I18nCatalog { id: catalog; name: "cura" }
@@ -38,6 +48,10 @@ UM.MainWindow {
         tooltip.hide();
     }
 
+    function hidemenu(){
+        applicationMenu.visible = (applicationMenu.visible) ? false : true
+        applicationMenu.height = (applicationMenu.visible) ? 20 :  0 
+    }
     Rectangle {
         id: greyOutBackground
         anchors.fill: parent
@@ -105,21 +119,6 @@ UM.MainWindow {
             return fileBase
         }
         //DeleteSelection on the keypress backspace event
-        Keys.onPressed: {
-
-            if (event.key === Qt.Key_Backspace) {
-                Cura.Actions.deleteSelection.trigger()
-            }
-            // application menu
-             else if (event.key === Qt.Key_Alt)  {
-                
-                 applicationMenu.visible = (applicationMenu.visible) ? false : true
-                 applicationMenu.height = (applicationMenu.visible) ? 20 :  0 
-            }
-            else if (event.key === Qt.Key_B) {
-                backgroundImage.visible = (backgroundImage.visible) ? false : true
-            }
-        }
 
         ApplicationMenu {
            id: applicationMenu
