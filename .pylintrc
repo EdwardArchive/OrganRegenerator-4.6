@@ -19,6 +19,8 @@
 # usually to register additional checkers.
 load-plugins=pylint_quotes
 
+init-hook='sys.path = ["C:\dev\Uranium"]'
+
 # We expect double string quotes
 string-quote=double-avoid-escape
 
