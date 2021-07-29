@@ -80,4 +80,12 @@ Row
             acceptedButtons: Qt.NoButton
         }
     }
+    ViewOrientationButton
+    {
+        iconSource: UM.Theme.getIcon("view_background")
+        onClicked :{
+                backgroundImage.visible = (backgroundImage.visible) ? false : true
+        }
+
+    }
 }

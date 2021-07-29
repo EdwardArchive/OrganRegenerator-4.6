@@ -104,7 +104,6 @@ UM.MainWindow {
             var fileBase = fileName.slice(0, fileName.indexOf("."))
             return fileBase
         }
-
         //DeleteSelection on the keypress backspace event
         Keys.onPressed: {
 
