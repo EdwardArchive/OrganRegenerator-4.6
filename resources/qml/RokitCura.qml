@@ -759,6 +759,7 @@ UM.MainWindow {
             }
         }
     }
+    // hidebackground button
     ViewOrientationButton
     {
         visible : true
@@ -776,6 +777,7 @@ UM.MainWindow {
         }
 
     }
+
     /**
      * Function to check whether a QML object has a certain type.
      * Taken from StackOverflow: https://stackoverflow.com/a/28384228 and

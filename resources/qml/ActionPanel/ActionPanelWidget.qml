@@ -14,7 +14,7 @@ import Cura 1.0 as Cura
 Item {
     id: base
     width: actionPanelWidget.width + additionalComponents.width
-    height: childrenRect.height
+    height: childrenRect.height + 30
     visible: CuraApplication.platformActivity
 
     property bool hasPreviewButton: true
@@ -24,7 +24,7 @@ Item {
 
         width: UM.Theme.getSize("action_panel_widget").width
         height: childrenRect.height + 2 * UM.Theme.getSize("thick_margin").height
-        anchors.right: parent.right
+        anchors.right: parent.right + 30
         color: UM.Theme.getColor("main_background")
         border.width: UM.Theme.getSize("default_lining").width
         border.color: UM.Theme.getColor("lining")
