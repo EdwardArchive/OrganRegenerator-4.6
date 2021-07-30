@@ -12,6 +12,8 @@ class RokitGCodeModel():
             'G58_G0_X0_Y0': 'G55 G0 X0.0 Y0.0 ;(ORIGIN)\n',
             'G59_G0_X0_Y0': 'G59 G0 X0.0 Y0.0 ;(UV-A)\n',
 
+            'G0_Z5': 'G0 Z5.0\n', 
+
             'G92_X0_Y0': 'G92 X0.0 Y0.0\n', 
             'G92_E0': 'G92 E0.0\n',
 
@@ -25,6 +27,8 @@ class RokitGCodeModel():
             'M386_TIME': 'M386 {time:<.1f}\n',
             'M384': 'M384\n',
             'G4_DURATION': 'G4 P{duration:d}\n',
+
+            'G0_Z40': 'G0 Z40.0\n', 
 
             'M173': 'M173\n',
             'M174': 'M174\n',
