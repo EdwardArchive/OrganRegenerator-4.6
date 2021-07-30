@@ -765,8 +765,9 @@ UM.MainWindow {
         visible : true
         x:base.width-30
         y:base.height-30
-        iconSource: UM.Theme.getIcon("view_background")
+        iconSource: (backgroundImage.visible) ?  UM.Theme.getIcon("view_no_background") : UM.Theme.getIcon("view_background")
         onClicked :{
+                
                 backgroundImage.visible = (backgroundImage.visible) ? false : true
         }
         UM.TooltipArea
