@@ -152,17 +152,17 @@ Item {
     }
     Text{
         id : numderofsegments
-        x:buildDishSelector.width / 2 - 140
+        x:buildDishSelector.width / 2 - 115
         y:buildDishSelector.height - 40
         width:100
         height:20
         text:"Number of segments"
-        font.pixelSize: 15
+        font.pixelSize: 13
         verticalAlignment: Text.AlignVCenter
     }
     TextField {
         id: textField
-        x : buildDishSelector.width / 2 + 20
+        x : buildDishSelector.width / 2 + 15
         y : buildDishSelector.height - 40
         horizontalAlignment: TextInput.AlignHCenter
         validator: IntValidator {bottom: 1; top: 9}
