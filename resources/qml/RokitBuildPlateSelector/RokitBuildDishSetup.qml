@@ -150,5 +150,34 @@ Item {
             storeIndex: 0
         }
     }
-              
+    Text{
+        id : numderofsegments
+        x:buildDishSelector.width / 2 - 140
+        y:buildDishSelector.height - 40
+        width:100
+        height:20
+        text:"Number of segments"
+        font.pixelSize: 15
+        verticalAlignment: Text.AlignVCenter
+    }
+    TextField {
+        id: textField
+        x : buildDishSelector.width / 2 + 20
+        y : buildDishSelector.height - 40
+        horizontalAlignment: TextInput.AlignHCenter
+        validator: IntValidator {bottom: 1; top: 9}
+        placeholderText: qsTr("Enter number")
+        style: TextFieldStyle {
+            textColor: "black"
+            background : 
+                Rectangle {
+                    implicitWidth: 100
+                    implicitHeight: 22
+                    color: "white"
+                    border.color : "#D3D3D3"
+                    radius:3 
+                }
+            
+        }
+    } 
 }
