@@ -2731,8 +2731,8 @@
                     "unit": "mm/s",
                     "type": "float",
                     "minimum_value": "0.1",
-                    "maximum_value_warning": "150",
-                    "maximum_value": "math.sqrt(machine_max_feedrate_x ** 2 + machine_max_feedrate_y ** 2)",
+                    "maximum_value_warning": "15",
+                    "maximum_value": "20",
                     "default_value": 60,
                     "settable_per_mesh": true,
                     "children":
