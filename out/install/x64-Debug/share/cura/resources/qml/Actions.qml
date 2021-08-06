@@ -164,7 +164,7 @@ Item
     Action
     {
         id: preferencesAction
-        text: catalog.i18nc("@action:inmenu", "Configure OrganRegen...")
+        text: catalog.i18nc("@action:inmenu", "Configure ROKIT ORS...")
         iconName: "configure"
     }
 

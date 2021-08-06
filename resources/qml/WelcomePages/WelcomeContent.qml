@@ -26,7 +26,7 @@ Item
             id: titleLabel
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
-            text: catalog.i18nc("@label", "Welcome to Organ Regenerator")
+            text: catalog.i18nc("@label", "Welcome to ROKIT ORS")
             color: UM.Theme.getColor("primary_button")
             font: UM.Theme.getFont("huge")
             renderType: Text.NativeRendering
@@ -44,7 +44,7 @@ Item
             id: textLabel
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
-            text: catalog.i18nc("@text", "Please setup the Organ Regenerator.")
+            text: catalog.i18nc("@text", "Please setup the ROKIT ORS.")
             font: UM.Theme.getFont("medium")
             color: UM.Theme.getColor("text")
             renderType: Text.NativeRendering
