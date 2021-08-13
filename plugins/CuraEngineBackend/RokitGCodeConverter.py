@@ -1,6 +1,5 @@
 # Copyright (c) 2020 Ultimaker B.V.
 # Cura is released under the terms of the LGPLv3 or higher.
-
 from string import Formatter
 from enum import IntEnum
 from UM.Logger import Logger
@@ -18,7 +17,7 @@ from .RokitPattern import RokitPattern
 
 class RokitGCodeConverter:
     def __init__(self) -> None:    
-      
+        self.wellno = CuraApplication.getInstance().get_platenmber()
         self._UV_TEST = False
 
         self._Q= RokitPrintQuality()
@@ -98,7 +97,11 @@ class RokitGCodeConverter:
         number_of_walls = int(travel['number_of_walls'])
         number_of_rows = int(travel['number_of_rows'])
         spacing = travel['spacing']
-
+        
+        #사용자 값에 따른 wellplate 출력수 변경
+        if self.wellno is not None and self.wellno<number_of_walls:
+            number_of_walls = self.wellno
+        
         chunk_list = []
         insert_here = -1
         for index, line in enumerate(gcode_list):

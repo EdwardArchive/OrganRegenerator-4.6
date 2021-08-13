@@ -18,7 +18,6 @@ Item {
     property real sidePadding: UM.Theme.getSize("thin_margin").width
 
     property string tabName: ""
-
     Item {
         id: tabSpace
 
@@ -161,12 +160,12 @@ Item {
         verticalAlignment: Text.AlignVCenter
     }
     TextField {
-        id: textField
+        id: inputtxt
         x : buildDishSelector.width / 2 + 15
         y : buildDishSelector.height - 40
         horizontalAlignment: TextInput.AlignHCenter
-        validator: IntValidator {bottom: 1; top: 9}
-        placeholderText: qsTr("Enter number")
+        validator: IntValidator {bottom: 1; top: 96}
+        placeholderText:CuraApplication.qget_platenmber
         style: TextFieldStyle {
             textColor: "black"
             background : 
@@ -179,5 +178,9 @@ Item {
                 }
             
         }
-    } 
+        onTextChanged: {
+            CuraApplication.set_platenmber(inputtxt.text)
+        }
+        
+    }
 }

@@ -217,6 +217,7 @@ class CuraApplication(QtApplication):
         self._volume = None
         self._output_devices = {}
         self._print_information = None
+        self._WellplateNum=None
         self._previous_active_tool = None
         self._platform_activity = False
         self._scene_bounding_box = AxisAlignedBox.Null
@@ -631,6 +632,20 @@ class CuraApplication(QtApplication):
     def setGlobalContainerStack(self, stack: "GlobalStack") -> None:
         self._setLoadingHint(self._i18n_catalog.i18nc("@info:progress", "Initializing Active Machine..."))
         super().setGlobalContainerStack(stack)
+    
+
+    @pyqtSlot(int)
+    def set_platenmber(self, val):
+        self._WellplateNum = val
+    
+    @pyqtProperty(str)
+    def qget_platenmber(self):
+        if self._WellplateNum is None:
+            return "Enter Number"
+        return str(self._WellplateNum)
+    
+    def get_platenmber(self):
+        return self._WellplateNum
 
     ## A reusable dialogbox
     #
